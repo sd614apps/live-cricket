@@ -37,7 +37,15 @@ app.get('/players-search', (req, res) => {
 });
 app.get('/series-info', (req, res) => {
     const seriesId = req.query.seriesId || '';
-    fetchFromAPI(`/series_info?id=${seriesId}`, res);
+    fetchFromAPI(`/series_info?id=${seriesId}&offset=0`, res);
+});
+app.get('/player-info', (req, res) => {
+    const playerId = req.query.playerId || '';
+    fetchFromAPI(`/players_info?id=${playerId}&offset=0`, res);
+});
+app.get('/match-info', (req, res) => {
+    const matchId = req.query.matchId || '';
+    fetchFromAPI(`/match_info?id=${matchId}&offset=0`, res);
 });
 
 // Start the server on port 3001
