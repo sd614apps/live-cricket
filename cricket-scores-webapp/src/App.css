@@ -1,51 +1,113 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: #d9bfbb;
+	color: #333;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: #afa9b1;
+	min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Search Bar */
+.search-bar {
+	max-width: 600px;
+	margin: 0 auto 20px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 5px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar input {
+	border: none;
+	outline: none;
+	flex: 1;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar button {
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	margin-left: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
 }
 
-.series-item {
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;  /* Round the corners a bit */
-  cursor: pointer; /* changes the mouse pointer to hand when hovering */
-  transition: background-color 0.3s ease; /* smooth transition for background color */
+.search-bar button:hover {
+  	background-color: #45a049;
 }
 
-.series-item:hover {
-  background-color: #f0f0f0; /* light grey background when hovering */
-  border: 1px solid #d4d4d4;
+/* Results */
+.series-item, .player-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.series-item:hover, .player-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Series and Player Details */
+.series-details, .player-details, .match-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+button {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ea5028;
+}
+
+/* Match Item */
+.match-item {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.match-item:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
 }
