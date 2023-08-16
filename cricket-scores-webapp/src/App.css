@@ -111,3 +111,91 @@ button:hover {
     background-color: #e0e0e0;
     transform: scale(1.02);
 }
+
+/* Add this CSS to your existing styles or create a new CSS file */
+
+.stat-table {
+	margin-top: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.close-button {
+	background-color: #f2f2f2;
+	border: none;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.close-button:hover {
+	background-color: #e0e0e0;
+}
+
+.match-details-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+.match-list-container {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+.back-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.match-info {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.score-details {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.inning-score {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.inning-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.score-item {
+    margin-top: 5px;
+}
