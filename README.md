@@ -3,7 +3,7 @@
 ### Backend
 - npm init -y
 - npm install express axios cors dotenv
-- node index.js
+- node server.js
 
 ### Frontend
 - npx create-react-app cricket-scores-webapp
